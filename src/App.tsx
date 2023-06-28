@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 import SignUp from './views/Authentication/SignUp';
-import Authentication from './views/Authentication';
+import SignIn from './views/Authentication/SingIn';
 
 export default function App() {
   // const [connection, setConnection] = useState<string>('');
@@ -29,6 +29,9 @@ export default function App() {
     //   </header>
     //   <SignUp />
     // </div>
-    <Authentication />
+    <>
+      <SignUp />
+      <SignIn />
+    </>
   );
 }
