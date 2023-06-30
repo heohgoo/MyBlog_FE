@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import SignUp from './views/Authentication/SignUp';
-import SignIn from './views/Authentication/SingIn';
+import MainLayout from './views/layouts/MainLayout';
+import Navigation from './views/Navigation';
+import Authentication from './views/Authentication';
 
 export default function App() {
   // const [connection, setConnection] = useState<string>('');
@@ -30,8 +31,8 @@ export default function App() {
     //   <SignUp />
     // </div>
     <>
-      <SignUp />
-      <SignIn />
+      <Navigation />
+      <Authentication />
     </>
   );
 }
