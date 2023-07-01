@@ -31,8 +31,8 @@ export default function SignUp(props: Props) {
             userEmail,
             userPassword,
             userPasswordCheck,
-            userPhoneNumber,
             userNickname,
+            userPhoneNumber,
             userAddress,
             userAddressDetail,
         };
