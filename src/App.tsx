@@ -31,8 +31,9 @@ export default function App() {
     //   <SignUp />
     // </div>
     <>
-      <Navigation />
-      <Authentication />
+      <MainLayout />
+      {/* <Navigation />
+      <Authentication /> */}
     </>
   );
 }
