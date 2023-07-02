@@ -4,6 +4,6 @@ import Authentication from '../Authentication'
 
 export default function BoardMain() {
   return (
-    <div>Board Main</div>
+    <div style={{ height: '100vh', backgroundColor: 'blue'}}>Board Main</div>
   )
 }

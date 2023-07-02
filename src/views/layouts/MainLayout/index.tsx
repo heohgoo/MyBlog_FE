@@ -21,19 +21,19 @@ export default function MainLayout() {
     }
     await axios.get('http://localhost:4040/api/board/', requestOption).then((response) => {
       setBoardResponse(response.data); 
-      console.log(response.data);
     }).catch((error) => '');
   }
 
   useEffect(() => {
     const token = cookies.token
     if (token) getBoard(token);
-  }, [user]);
+    else setBoardResponse('');
+  }, [cookies.token]);
 
   return (
     <>
     <Navigation />
-    {boardResponse ? (<BoardMain />) : (<Authentication />)}
+    {user ? (<BoardMain />) : (<Authentication />)}
     </>
   )
 }
